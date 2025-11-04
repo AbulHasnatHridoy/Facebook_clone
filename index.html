@@ -17,15 +17,27 @@
         </div>
 
         <div class="login_container">
-            <div class="input"> <input type="text" placeholder="Email address or phone number" id="emailorphone"></div>
-            <div class="input"> <input type="password" placeholder="Password" id="password"></div>
-            <div class="input"> <button type="button" id="login">Log in</button></div>
-            <div class="input"> <button type="button" id="forgotpassword"> Forgotten Password?</button></div>
+            <form action="login.php" method="POST">
+                <div class="input">
+                    <input type="text" name="email" placeholder="Email address or phone number" required>
+                </div>
+                <div class="input">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="input">
+                    <button type="submit" id="login">Log in</button>
+                </div>
+            </form>
+            <div class="input">
+                <button type="button" id="forgotpassword">Forgotten password?</button>
+            </div>
             <hr>
-            <div class="input"> <button type="button" id="createAccount">Create New Account</button></div>
-            <div class="input" id="create_page"> <a
-                    href="https://www.facebook.com/pages/create/?ref_type=registration_form"> Create a page</a> for a
-                celebrity, brand or business. </div>
+            <div class="input">
+                <button type="button" id="createAccount">Create new account</button>
+            </div>
+            <div class="input" id="create_page">
+                <a href="#">Create a Page</a> for a celebrity, brand or business.
+            </div>
         </div>
     </div>
     <footer>
